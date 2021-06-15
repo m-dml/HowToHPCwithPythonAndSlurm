@@ -1,0 +1,6 @@
+- python==3.8
+- dask
+- distributed
+- bokeh
+- joblib
+- ray
