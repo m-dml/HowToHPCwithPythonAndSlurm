@@ -1,0 +1,138 @@
+distributed.nanny - INFO -         Start Nanny at: 'tcp://172.16.37.156:38581'
+distributed.diskutils - INFO - Found stale lock file and directory '/gpfs/work/machnitz/dask_storage/dask-worker-space/worker-uq5_e_gl', purging
+distributed.worker - INFO -       Start worker at:  tcp://172.16.37.156:42940
+distributed.worker - INFO -          Listening to:  tcp://172.16.37.156:42940
+distributed.worker - INFO -          dashboard at:        172.16.37.156:42249
+distributed.worker - INFO - Waiting to connect to:    tcp://172.16.33.2:45818
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -               Threads:                         45
+distributed.worker - INFO -                Memory:                  93.13 GiB
+distributed.worker - INFO -       Local Directory: /gpfs/work/machnitz/dask_storage/dask-worker-space/worker-q15ek852
+distributed.worker - INFO - -------------------------------------------------
+distributed.worker - INFO -         Registered to:    tcp://172.16.33.2:45818
+distributed.worker - INFO - -------------------------------------------------
+distributed.core - INFO - Starting established connection
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.13638595, 0.94292568, 0.85670295, 0.0365086 ]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.84082564, 0.7289807 , 0.8034321 , 0.77789826]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.24447654, 0.4296084 , 0.51973393, 0.90177311]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.34710737, 0.47524958, 0.38157328, 0.9471171 ]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.8521269 , 0.95777341, 0.27432826, 0.50253345]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.05877862, 0.85991376, 0.36995111, 0.95275039]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.87327165, 0.27875506, 0.06117739, 0.75922704]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.36036424, 0.05166583, 0.34657054, 0.49480928]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.71466698, 0.63971727, 0.411396  , 0.7582502 ]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+distributed.worker - WARNING - Compute Failed
+Function:  costly_simulation
+args:      (array([0.55408679, 0.18816873, 0.49477857, 0.60237658]))
+kwargs:    {}
+Exception: NameError("name 'time' is not defined")
+
+tornado.application - ERROR - Exception in callback <bound method SystemMonitor.update of <SystemMonitor: cpu: 30 memory: 124 MB fds: 22>>
+Traceback (most recent call last):
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/tornado/ioloop.py", line 905, in _run
+    return self.callback()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/system_monitor.py", line 96, in update
+    gpu_extra = nvml.one_time()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/diagnostics/nvml.py", line 45, in one_time
+    h = _pynvml_handles()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/diagnostics/nvml.py", line 20, in _pynvml_handles
+    count = pynvml.nvmlDeviceGetCount()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/pynvml.py", line 797, in nvmlDeviceGetCount
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetCount_v2")
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/pynvml.py", line 325, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_UNINITIALIZED)
+pynvml.NVMLError_Uninitialized: Uninitialized
+tornado.application - ERROR - Exception in callback <bound method SystemMonitor.update of <SystemMonitor: cpu: 4 memory: 124 MB fds: 22>>
+Traceback (most recent call last):
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/tornado/ioloop.py", line 905, in _run
+    return self.callback()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/system_monitor.py", line 96, in update
+    gpu_extra = nvml.one_time()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/diagnostics/nvml.py", line 45, in one_time
+    h = _pynvml_handles()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/diagnostics/nvml.py", line 20, in _pynvml_handles
+    count = pynvml.nvmlDeviceGetCount()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/pynvml.py", line 797, in nvmlDeviceGetCount
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetCount_v2")
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/pynvml.py", line 325, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_UNINITIALIZED)
+pynvml.NVMLError_Uninitialized: Uninitialized
+tornado.application - ERROR - Exception in callback <bound method SystemMonitor.update of <SystemMonitor: cpu: 6 memory: 124 MB fds: 23>>
+Traceback (most recent call last):
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/tornado/ioloop.py", line 905, in _run
+    return self.callback()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/system_monitor.py", line 96, in update
+    gpu_extra = nvml.one_time()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/diagnostics/nvml.py", line 45, in one_time
+    h = _pynvml_handles()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/diagnostics/nvml.py", line 20, in _pynvml_handles
+    count = pynvml.nvmlDeviceGetCount()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/pynvml.py", line 797, in nvmlDeviceGetCount
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetCount_v2")
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/pynvml.py", line 325, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_UNINITIALIZED)
+pynvml.NVMLError_Uninitialized: Uninitialized
+tornado.application - ERROR - Exception in callback <bound method SystemMonitor.update of <SystemMonitor: cpu: 4 memory: 125 MB fds: 23>>
+Traceback (most recent call last):
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/tornado/ioloop.py", line 905, in _run
+    return self.callback()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/system_monitor.py", line 96, in update
+    gpu_extra = nvml.one_time()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/diagnostics/nvml.py", line 45, in one_time
+    h = _pynvml_handles()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/distributed/diagnostics/nvml.py", line 20, in _pynvml_handles
+    count = pynvml.nvmlDeviceGetCount()
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/pynvml.py", line 797, in nvmlDeviceGetCount
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetCount_v2")
+  File "/gpfs/home/machnitz/miniconda3/envs/plankton/lib/python3.7/site-packages/pynvml.py", line 325, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_UNINITIALIZED)
+pynvml.NVMLError_Uninitialized: Uninitialized
+distributed.worker - INFO - Stopping worker at tcp://172.16.37.156:42940
+distributed.nanny - INFO - Worker closed
+slurmstepd: error: *** JOB 524403 ON n156 CANCELLED AT 2021-06-15T09:41:22 ***
+slurmstepd: error: task_p_post_term: rmdir(/dev/cpuset/slurm524403/slurm524403.4294967294_0) failed Device or resource busy
