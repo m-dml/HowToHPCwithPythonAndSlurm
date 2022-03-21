@@ -1,6 +1,6 @@
-- python==3.8
-- dask
-- distributed
-- bokeh
-- joblib
-- ray
+dask
+distributed
+bokeh
+joblib
+ray
+tqdm

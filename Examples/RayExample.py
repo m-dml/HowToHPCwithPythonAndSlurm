@@ -1,6 +1,11 @@
+import os
+import time
+
+import numpy as np
+import pandas as pd
 import ray
-from ray.util.joblib 
-import register_ray  # noqa: E402
+from joblib import Parallel, delayed
+from ray.util.joblib import register_ray  # noqa: E402
 
 
 # lets define a toy problem:
@@ -10,7 +15,6 @@ def costly_simulation(list_param):
 
 input_params = pd.DataFrame(np.random.random(size=(500, 4)),
                             columns=['param_a', 'param_b', 'param_c', 'param_d'])
-
 
 # now we use the ray cluster to run the problem:
 ray.init(address=os.getenv("RAY_ADDRESS"), _redis_password=os.getenv("REDIS_PWD"))
